@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Expectancy & Death Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">Life Expectancy Predictor</h1>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress-bar"></div>
+        </div>
+        
+        <div id="quiz-container">
+            <!-- Questions will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="button-container">
+            <button id="previous-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <h2>Your Estimated Life Expectancy</h2>
+            <div class="result-age" id="result-age">85</div>
+            <div class="result-message" id="result-message">Based on your answers, you're likely to live to around this age.</div>
+            <div class="result-factors" id="result-factors">
+                <h3>Factors affecting your life expectancy:</h3>
+                <ul id="factors-list">
+                    <!-- Factors will be inserted here by JavaScript -->
+                </ul>
+            </div>
+            <button id="death-btn">Want to know how you'll die?</button>
+        </div>
+        
+        <div class="death-result" id="death-result">
+            <h2 class="death-title" id="death-title">Your Predicted Cause of Death</h2>
+            <p class="death-description" id="death-description"></p>
+            <button class="restart-btn" id="restart-btn">Start Over</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
